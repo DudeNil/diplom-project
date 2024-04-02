@@ -1,0 +1,880 @@
+@import url(https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap);
+.roboto-regular {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.roboto-medium body {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.roboto-bold {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+/* body, html {
+    height: 100%;
+} */
+
+:root {
+    --red: #F51822;
+    --yellow: #F5F14E;
+    --white: #ececec;
+    --black: #0b0b0b;
+}
+
+
+/* nav */
+
+.nav {
+    background-color: var(--black);
+    width: 100%;
+    padding: 2vh 3vw 2vh 3vw;
+}
+.nav_logo {
+    width: 70px;
+}
+.nav_list {
+    margin: 0 auto;
+}
+.nav_item {
+    margin-left: 3vw;
+    margin-right: 3vw;
+    font-size: 1.3rem;
+}
+.nav_link {
+    color: var(--white);
+    text-decoration: none;
+
+}
+.nav_link:hover {
+    border-bottom: solid var(--white) 2px;
+}
+.nav_button {
+    width: 50px;
+    background: none;
+    color: white;
+    margin-right: 30px;
+}
+
+/* footer */
+
+.footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+}
+.footer__image {
+    margin: 0 auto;
+}
+.footer__block-text {
+}
+.footer__block-href > ul > li > a {
+    color: var(--black);
+    text-decoration: none;
+}
+.footer__icons {
+    display: flex;
+
+}
+.footer__link:hover {
+    border-bottom: solid var(--black) 2px;
+}
+.footer__icon {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-bottom: 5%;
+    margin-right: 5%;
+}
+/* form sign up */
+.online-signup-title {
+    text-align: center;
+    margin: 5vh 0;
+
+}
+.online-signup {
+    max-width: 80%;
+    margin: 0 auto;
+
+}
+.online-signup__input {
+    margin: 5% 0;
+}
+.online-signup__btn {
+
+}
+.radio-block {
+    display: none;
+}
+
+@media (max-width: 660px) {
+
+    .online-signup {
+        max-width: 90%;
+
+    }
+}
+
+/*  */
+
+@media (max-width: 490px) {
+    .footer {
+        grid-template-columns: repeat(1, 1fr);
+        text-align: center;
+    }
+    .footer__ul {
+        text-align: start;
+
+    }
+    .footer__block-href {
+        margin: 0 auto;
+    }
+    .footer__icons {
+        flex-direction: row !important;
+    }
+}
+
+
+/* main css */
+/* babershop-online */
+
+.babershop-online {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: linear-gradient(180deg, rgba(161, 114, 114, 0) 0%, rgba(0,0,0,1) 100%), url('/img/barbershop.jpg');
+    height: 100vh;
+
+}
+
+.babershop-online__block {
+    margin: 0 auto;
+    width: 30%;
+    text-align: center;
+    padding-top: 30vh;
+    padding-bottom: 40vh;
+}
+.babershop-online_title {
+    color: #ececec;
+    margin-bottom: 4vh;
+}
+.babershop-online_subtitle {
+    color: var(--white);
+    margin-bottom: 5vh;
+}
+.babershop-online__button {
+    margin: 0 auto;
+    text-decoration: none;
+    color: var(--yellow);
+    font-size: 2rem;
+    border: var(--yellow) solid 2px;
+    padding-left: 35px;
+    padding-right: 35px;
+    padding-bottom: 5px;
+
+}
+.babershop-online__button:hover {
+    background-color: var(--yellow);
+    color: var(--black);
+}
+/* about barbershop */
+
+.about-barbershop {
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 5%;
+}
+.about-barbershop__title {
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+}
+.about-barbershop__text {
+    font-size: 1.5rem;
+    margin-bottom: 8vh;
+}
+.about-barbershop__button {
+    border: var(--black) solid 2px;
+    padding: 15px 40px 15px 40px;
+    text-decoration: none;
+    color: var(--black);
+    margin-bottom: 5vh;
+
+}
+.about-barbershop__button:hover {
+    background-color: var(--black);
+    color: var(--white);
+
+
+}
+/* barbershop grid services */
+.barbershop-services__title-block {
+
+    margin-bottom: 10%;
+    color: var(--white);
+}
+
+.barbershop-services {
+    text-align: center;
+    background-color: var(--black);
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+.barbershop-services__wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 10vh;
+    grid-column-gap: 0;
+}
+.barbershop-services_norepeat-cover {
+    background-repeat: no-repeat;
+    height: 400px;
+    background-size: cover;
+
+}
+.barbershop-services__block {
+    height: 400px;
+    width: auto;
+}
+
+.barbershop-services__image1 {
+    background-image: linear-gradient(180deg, rgba(0,0,0,0.8223740179665616) 0%, rgba(255,255,255,0) 100%), url('/img/camouflage-beard.jpg');
+    text-align: center;
+}
+.barbershop-services__image2 {
+    background-image: linear-gradient(180deg, rgba(0,0,0,0.8223740179665616) 0%, rgba(255,255,255,0) 100%),url('/img/beard.jpeg');
+    text-align: center;
+}
+.barbershop-services__image3 {
+    background-image: linear-gradient(180deg, rgba(0,0,0,0.8223740179665616) 0%, rgba(255,255,255,0) 100%), url('/img/camouflage-hair.jpg');
+    text-align: center;
+}
+.barbershop-services__image4 {
+    background-image: linear-gradient(180deg, rgba(0,0,0,0.8223740179665616) 0%, rgba(255,255,255,0) 100%), url('/img/child-haircut.jpg');
+    text-align: center;
+}
+.barbershop-services__image5 {
+    background-image: linear-gradient(180deg, rgba(0,0,0,0.8223740179665616) 0%, rgba(255,255,255,0) 100%), url('/img/correction-haircut.jpg');
+    text-align: center;
+}
+.barbershop-services__image6 {
+    background-image: linear-gradient(180deg, rgba(0,0,0,0.8223740179665616) 0%, rgba(255,255,255,0) 100%), url('/img/haircut-mashine.jpg');
+    text-align: center;
+}
+.barbershop-services__image7 {
+    text-align: center;
+    background-image: linear-gradient(180deg, rgba(0,0,0,0.8223740179665616) 0%, rgba(255,255,255,0) 100%), url('/img/men-haircut.jpg');
+}
+.barbershop-services__image8 {
+    background-image: linear-gradient(180deg, rgba(0,0,0,0.8223740179665616) 0%, rgba(255,255,255,0) 100%), url('/img/shave-head.jpg');
+    text-align: center;
+}
+
+.barbershop-services_white {
+    color: white;
+    position: relative;
+}
+.barbershop-services__title {
+    font-size: 1.5rem;
+    top: 10%;
+}
+.barbershop-services__price {
+    font-size: 2rem;
+    color: var(--yellow);
+    top: 10%;
+}
+.barbershop-services__button {
+    text-decoration: none;
+    border: solid var(--white) 2px;
+    color: var(--white);
+    padding: 15px 30px;
+    margin-top: 15vh;
+    background: none;
+
+}
+.barbershop-services__button:hover {
+    background-color: var(--white);
+    color: var(--black);
+}
+
+/* barbers section */
+.barbers {
+}
+.barbers__title {
+    text-align: center;
+    margin-top: 5vh;
+}
+.barbers__card {
+    display: grid;
+    grid-template-columns: 50% 40%;
+    margin: 5% 15%;
+
+}
+.barbers__image {
+    max-width: 60%;
+    margin: 0 auto;
+}
+.barbers__body {
+
+}
+.barbers__name {
+
+}
+.barbers__text {
+
+}
+.barbers__button {
+    color: var(--black);
+    text-decoration: none;
+    border: solid var(--black) 2px;
+    padding: 10px 20px;
+}
+.barbers__button:hover {
+    background-color: var(--black);
+    color: var(--white);
+}
+/* table main page */
+.barbershop-table-prices__row {
+    margin: 2vh 3vh;
+}
+.barbershop-table-prices__left {
+    font-size: 1.2rem;
+    text-align: left;
+    color: var(--white);
+}
+.barbershop-table-prices__right {
+    /* color:  rgb(105, 59, 13); */
+    color: var(--yellow);
+    text-align: end;
+}
+/* images partners */
+
+.images-partners {
+}
+.images-partners__title {
+    text-align: center;
+}
+.images-partners__imgs {
+    display: flex;
+    justify-content: center;
+
+}
+/* review */
+.review {
+
+}
+.review__title {
+    text-align: center;
+    margin: 3% 0;
+}
+.review__block {
+    text-align: center;
+    border: solid var(--black) 2px;
+    max-width: 65%;
+    margin: 0 auto;
+    padding: 2% 0;
+}
+.review__text {
+    max-width: 60%;
+    margin: 0 auto;
+}
+.review__image {
+}
+.review__name {
+}
+
+/* medias */
+
+@media (max-width: 1245px) {
+    .barbershop-services__wrapper {
+        grid-template-columns: repeat(2, 1fr);
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+}
+@media (max-width: 1347px) {
+    .barbers__text-block {
+        max-width: 90%;
+    }
+}
+@media (max-width: 1040px) {
+    .babershop-online__block {
+        padding-top: 17vh;
+    }
+    .babershop-online {
+        height: 63vh;
+    }
+    .barbers__block {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .barbers__text-block {
+        text-align: center;
+    }
+    .barbers__button-online {
+        margin: 10px 20px;
+    }
+    .barvers__button-about {
+        margin: 10px 20px;
+    }
+    .barbers__men-photo {
+        width: 40%;
+        margin-top: 30px;
+    }
+}
+
+@media (min-width: 1086px) {
+    .nav_button {
+        display: none;
+    }
+}
+@media (max-width: 1086px) {
+    .nav_list {
+        display: none;
+    }
+    .nav_item {
+        display: none;
+    }
+}
+@media (max-width: 854px) {
+    .babershop-online__block {
+        width: 100%;
+        padding-top: 17vh
+    }
+    .babershop-online {
+        height: 56vh;
+    }
+
+}
+
+@media (max-width: 780px) {
+    .barbershop-services__wrapper {
+        display: none;
+    }
+    .barbers__card {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .barbers__body {
+        text-align: center;
+        margin: 5% 0;
+    }
+    .barbers__text {
+        margin-bottom: 10%;
+    }
+
+}
+@media (min-width: 781px) {
+    .barbershop-table-prices {
+        display: none;
+    }
+}
+
+@media (max-width: 720px) {
+    .barbershop-table-prices {
+        padding: 0 5vh;
+    }
+    .images-partners__imgs {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+    .images-partners__imgs > img {
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 700px) {
+    .barbers__photo {
+        display: none;
+    }
+}
+
+@media (max-width: 579px) {
+    .footer__icons {
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+    }
+    .about-barbershop {
+        margin-bottom: 10%;
+    }
+    .barbershop-table-prices {
+        padding: 0 1vh;
+    }
+}
+
+@media (max-width: 390px) {
+    .images-partners__imgs {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+
+    }
+    .images-partners__imgs > img {
+        margin-top: 20px;
+    }
+}
+
+/* price css */
+.price-title {
+    text-align: center;
+    margin-top: 10vh;
+    margin: 10vh;
+}
+.prices {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-left: 20%;
+    margin-right: 20%;
+}
+.prices__block {
+    background-color: var(--black);
+    width: 80%;
+    margin: 5vh auto;
+    padding: 50px
+}
+.prices__title {
+    color: var(--white);
+    font-size: 2rem;
+}
+.prices__text {
+    color: var(--white);
+    margin-top: 10px;
+}
+.prices__costR {
+    color: var(--white);
+}
+.prices__cost {
+    color: var(--yellow);
+}
+.prices__button {
+    border: solid var(--yellow) 2px;
+    padding: 10px 30px 13px 30px;
+    text-decoration: none;
+    color: var(--yellow);
+}
+.prices__button:hover {
+    background-color: var(--yellow);
+    color: var(--black);
+
+}
+
+@media (max-width: 1310px) {
+    .prices {
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+}
+
+@media (max-width: 980px) {
+    .prices {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media (max-width: 530px) {
+    .prices {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    .price-title {
+        margin: 4vh;
+    }
+    .prices__block {
+        padding: 40px
+    }
+}
+
+@media (max-width: 420px) {
+    .prices {
+        margin-left: 1%;
+        margin-right: 1%;
+    }
+    .prices__block {
+        width: 90%;
+    }
+}
+/* contacts css */
+.contacts_title {
+    text-align: center;
+    margin-top: 5%;
+    margin-bottom: 5%;
+
+}
+.contacts-map {
+    text-align: center;
+}
+
+.contacts {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    text-align: center;
+
+}
+.contacts-map-frame {
+    height: 400px;
+    width: 700px;
+}
+.contacts__nomers {
+
+}
+.contacts__e-email {
+
+}
+.contacts__timework {
+
+}
+@media (max-width: 720px) {
+
+    .contacts-map-frame {
+        width: 600px;
+        height: 300px;
+
+    }
+}
+
+@media (max-width: 620px) {
+    .contacts-map-frame {
+        width: 500px;
+        height: 300px;
+
+    }
+}
+
+@media (max-width: 540px) {
+    .contacts {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .contacts-map-frame {
+        width: 300px;
+        height: 200px;
+
+    }
+}
+/* blog css */
+
+
+.blog-title {
+    text-align: center;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.blog {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.blog__card {
+    width: 80%;
+    margin: 5% auto;
+}
+
+@media (max-width: 890px) {
+    .blog {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+/* barbers css */
+
+.barbersmen {
+    background-image:linear-gradient(180deg, rgba(0,0,0,0.8223740179665616) 0%, rgba(255,255,255,0) 100%), url('/img/barbermen1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+}
+.barbersmen__title {
+    color: var(--white);
+    text-align: center;
+    padding-top: 35vh;
+    padding-bottom: 45vh;
+}
+.slide-barbers {
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+}
+.slide-barbers__blocks {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 0 10%;
+}
+.slide-barbers__block1 {
+    text-align: center;
+}
+.slide-barbers__text {
+    max-width: 70%;
+}
+.slide-barbers__status {
+    font-size: 2rem;
+}
+.slide-barbers__name {
+    font-size: 1.5rem;
+}
+.slide-barbers__image {
+    max-width: 40%;
+}
+
+@media (max-width: 1400px) {
+    .barbersmen__title {
+        padding-top: 21vh;
+    }
+}
+@media (max-width: 1200px) {
+    .barbersmen__title {
+        padding-top: 21vh;
+        padding-bottom: 23vh;
+    }
+}
+@media (max-width: 920px) {
+    .barbersmen__title {
+        padding-top: 20vh;
+    }
+}
+
+@media (max-width: 750px) {
+    .slide-barbers__blocks {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .slide-barbers__text {
+        text-align: center;
+        min-width: 100%;
+    }
+}
+
+@media (max-width: 620px) {
+    .barbersmen__title {
+        padding-bottom: 24vh;
+    }
+}
+
+/* about css */
+.about-us {
+    background-image: url('/img/banner-barbershop.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+
+}
+.about-us__title {
+    color: var(--white);
+    text-align: center;
+    padding-top: 30vh;
+    padding-bottom: 30vh;
+
+}
+.about-btn {
+    font-size: 2rem;
+}
+.about-nav-list {
+    background-color: white;
+}
+.spinner-block {
+
+
+}
+.nav-tabs .nav-link {
+    border: none !important;
+}
+.background-image-fon1 {
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.66) 100%, rgba(255,255,255,0) 100%), url('/img/slide-barbershop1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+
+}
+.background-image-fon2 {
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.64) 100%, rgba(255,255,255,0) 100%), url('/img/slide-barbershop2.jpg');
+    background-repeat: no-repeat;
+
+    background-size: cover;
+    height: 100vh;
+}
+.background-image-fon3 {
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.647) 100%, rgba(255,255,255,0) 100%), url('/img/slide-barbershop3.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+.background-image-fon4 {
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.6) 100%, rgba(255,255,255,0) 100%), url('/img/slide-barbershop4.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+.classic-block {
+
+}
+.classic__photo {
+    min-width: 100%;
+
+}
+.classic-list {
+
+}
+.h3 {
+    color: var(--white);
+    margin-top: 30vh;
+}
+.text {
+    color: var(--white);
+    margin: 5vh 15% 0 15%;
+    font-size: 1.5rem;
+}
+.tab-font-size {
+    font-size: 1.5rem;
+}
+.tab-fons-size-yellow {
+    font-size: 1.5rem;
+    color: rgb(226, 139, 51);
+}
+
+
+
+@media (max-width: 670px) {
+    .about-us__title {
+        padding-top: 17vh;
+        padding-bottom: 17vh;
+    }
+    .h3 {
+        margin-top: 15vh;
+    }
+    .adaptive-bg {
+        height: 83vh;
+    }
+    .text {
+        font-size: 1.0rem;
+    }
+}
+@media (max-width: 379px) {
+    .h3 {
+        margin-top: 5vh;
+    }
+}
+
+@media (max-width: 550px) {
+
+    .tab-font-size {
+        font-size: 1rem;
+    }
+    .tab-fons-size-yellow {
+        font-size: 1rem;
+    }
+}
