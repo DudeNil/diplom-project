@@ -24,7 +24,8 @@ Route::get('/barbers', [PageController::class, 'barbers'])->name('barbers');
 
 Route::get('/blog', [PageController::class, 'blog'])->name('blog');
 
-
 Route::get('/contacts', [PageController::class, 'contacts'])->name('contacts');
 
 Route::get('/signup', [PageController::class, 'signup'])->name('signup');
+
+Route::post('/signup/post', [PageController::class, 'register'])->name('register');
